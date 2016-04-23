@@ -1,5 +1,5 @@
-# SATdoku
-SATdoku is a super fast n by n Sudoku solver that uses Minisat as a backend.
+# satdoku
+satdoku is a super fast n by n Sudoku solver that uses Minisat as a backend.
 ### Input format
 The solver can handle `nxn` puzzles with sub-grids of size `k`. Of course, `k` must divide `n`. The first line specifies the two variables, and the remainder of the input file specifies the blank and non-blank squares of the puzzle. The numbers and blanks are delimited by commas, so `0,0` would be two adjacent zeros, while `0, ,0` would be zero, blank, zero:
 ```
