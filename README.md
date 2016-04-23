@@ -7,9 +7,9 @@ n k
 a_(0,0),a_(1,0),...a_(n,0)
 a_(0,1)            a_(n,1)
            .
-	    .
-	     . 
-a_(0,n-1)	   a_(n-1,n)
+            .
+             . 
+a_(0,n-1)        a_(n-1,n)
 a_(0,n),a_(1,n),...a_(n,n)
 ```
 For example, a normal 9x9 puzzle could be encoded like this:
