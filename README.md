@@ -14,7 +14,7 @@ a_(0,n),a_(1,n),..,a_(n,n)
 ```
 For example, a normal 9x9 puzzle could be encoded like this:
 ```
-9 9 3
+9 3
  , , , ,3, , , ,8
  , ,6, , , ,3,5,
  , ,3, , ,8, ,4,1
