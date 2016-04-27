@@ -197,3 +197,7 @@ void Puzzle::parse(string filename){
     }
   }
 }
+
+void Puzzle::addNumber(int v, int i,int  j){
+  puzzle.insert(puzzle.begin()+(i+j*n), v);
+}
