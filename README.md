@@ -1,5 +1,13 @@
 # satdoku
-satdoku is a super fast n by n Sudoku solver that uses Minisat as a backend.
+##Description
+sudoku is a puzzle played on an n by n grid divided into sub-grids of size k. The goal is to fill the blank cells of the grid such that each row, column, and subgrid contains a permutation of the numbers [1,n]. satdoku is a super fast n by n Sudoku solver that uses a SAT solver as a backend. It is the only solver I'm aware of that can handle the n by n case, and not just the traditional 9 by 9 case.
+
+##Dependencies
+The only dependency is a SAT solver called minisat. I chose minisat because it's in the ubuntu package repos, so on ubuntu just type `sudo apt-get install minisat`. On other OSes, you will need to install minisat such that you can run it from the command line. The name of the command has to be `minisat`. You could also use another SAT solver, as long as you wrapped it with a shell script so that the syntax is `minisat infile outfile`. 
+
+##How to run
+To install, just clone the repo, navigate to the directory, and run `make`. Then the syntax to run the program is just `satdoku puzzle`, where `puzzle` is a file containing a sudoku puzzle encoded as described below:
+
 ### Input format
 The solver can handle `n` by `n` puzzles with sub-grids of size `k`. Of course, `k` must divide `n`. The first line specifies the two variables, and the second line specifies the puzzle. The puzzle is specified by `n^2` numbers or periods delimited by commas (commas are optional between periods and between numbers and periods). The periods represent blank squares, and the numbers represent filled squares; the (i + j*n)th number represents square (i,j), counting from the top left. So it just goes row 1, row 2, ... , row n. Here are some examples:
 
@@ -76,7 +84,7 @@ And here's its encoding:
 .2..5.7..4..1....6,8....3...2....1..6.4..2.5.....6...1...2.9.....9......5,7.4...9.................................................................
 ```
 
-satdoku solves it easily:
+satdoku solves it easily, by the way:
 ```
 +--------+--------+--------+--------+
 |9  2  3 |1  5  11|7  12 6 |4  10 8 |
@@ -96,3 +104,14 @@ satdoku solves it easily:
 |8  10 7 |9  4  3 |1  6  5 |12 11 2 |
 +--------+--------+--------+--------+
 ```
+##System requirements
+I've only tested it in ubuntu, but the code is portable and should compile anywhere. Please file a bug report if you find it doesn't work on your OS and I'll try to fix it.
+
+##Group members
+Just me :).
+
+##Contributors
+Nope
+
+##Open issues/bugs
+None that I'm aware of
