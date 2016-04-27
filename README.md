@@ -35,6 +35,7 @@ input encoding:
 ```
 
 (unsolved) puzzle:
+```
 +-----+-----+-----+
 |    3|  2  |6    |
 |9    |3   5|    1|
@@ -48,7 +49,7 @@ input encoding:
 |8    |2   3|    9|
 |    5|  1  |3    |
 +-----+-----+-----+
-
+```
 input encoding:
 ```
 9 3
@@ -105,7 +106,7 @@ satdoku solves it easily, by the way:
 +--------+--------+--------+--------+
 ```
 ##System requirements
-I've only tested it in ubuntu, but the code is portable and should compile anywhere. Please file a bug report if you find it doesn't work on your OS and I'll try to fix it.
+I've only tested it on ubuntu, but the code is portable and should compile anywhere. Please file a bug report if you find it doesn't work on your OS and I'll try to fix it.
 
 ##Group members
 Just me :).
