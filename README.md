@@ -1,6 +1,6 @@
 # satdoku
 ##Description
-sudoku is a puzzle played on an n by n grid divided into sub-grids of size k. The goal is to fill the blank cells of the grid such that each row, column, and subgrid contains a permutation of the numbers [1,n]. satdoku is a super fast n by n Sudoku solver that uses a SAT solver as a backend. It is the only solver I'm aware of that can handle the n by n case, and not just the traditional 9 by 9 case.
+sudoku is a puzzle played on an n by n grid divided into sub-grids of size k. The goal is to fill the blank cells of the grid such that no row, column, or sub-grid has the same number twice. satdoku is a super fast n by n Sudoku solver that uses a SAT solver as a backend. It is the only solver I'm aware of that can handle the n by n case, and not just the traditional 9 by 9 case.
 
 ##Dependencies
 The only dependency is a SAT solver called minisat. I chose minisat because it's in the ubuntu package repos, so on ubuntu just type `sudo apt-get install minisat`. On other OSes, you will need to install minisat such that you can run it from the command line. The name of the command has to be `minisat`. You could also use another SAT solver, as long as you wrapped it with a shell script so that the syntax is `minisat infile outfile`. 
